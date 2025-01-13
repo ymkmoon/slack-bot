@@ -1,10 +1,11 @@
 from flask import Flask, request, jsonify
 import requests
+import config
 
 app = Flask(__name__)
 
-SLACK_BOT_TOKEN = "xoxb-your-bot-token"
-USER_ID = "U1234567890"  # 본인 Slack 사용자 ID
+SLACK_BOT_TOKEN = config.SLACK_BOT_TOKEN
+USER_ID = config.USER_ID  # 본인 Slack 사용자 ID
 
 @app.route("/slack/events", methods=["POST"])
 def slack_events():
