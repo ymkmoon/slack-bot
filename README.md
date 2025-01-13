@@ -4,10 +4,16 @@
 
 ## 가상 환경
 ### 가상 환경 생성
-> python -m venv venv
+
+```
+python -m venv venv
+```
 
 ### 가상 환경 활성화
-> .\venv\Scripts\activate
+
+```
+.\venv\Scripts\activate
+```
 
 #### 권한 에러 발생 시
 1. Windows PowerShell 관리자로 실행
